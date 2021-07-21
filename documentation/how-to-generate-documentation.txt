@@ -2,7 +2,7 @@ Generated documentation is available to users at this url:
 
 https://spacewalkproject.github.io/documentation.html
 
-It used to be available here, but no longer - http://spacewalk.redhat.com/documentation/
+Previously it was available at - http://spacewalk.redhat.com/documentation/  
 
 The documentation available here used to be stored in SVN, not our
 spacewalk.github repo, and auto-pulled into whatever serves content
@@ -20,8 +20,8 @@ To generate the docs, one needs to:
 Setup
 =====
     * Have available a SW-nightly/OracleXE machine, we'll call it 'SW-ORA'.  This
-      is only needed for the generation of the schema docs.  I have tested the
-      schema generation on rhel6, rhel7 and fedora26.  All appear to work correctly.
+      is only needed for the generation of the schema docs. Schema generation have been tested on rhel6, rhel7 and fedora26. 
+      All appear to work correctly.
       The current schema docs were generated on rhel6.
     * Checkout docs from the spacewalkproject.github.io.git repo
     * export DOCS_GIT=<wherever you spacewalkproject.github.io.git checkout is>
@@ -42,8 +42,8 @@ Javadoc
 =======
     # Build
     cd $SW_GIT/documentation;
-    # Check the Makefile to make sure the JAVA_DOC_SRC_VERSION is set
-    # to the version of java we're currently using.  Update if not.
+    # Check the Makefile to make sure the JAVA_DOC_SRC_VERSION is set to the version of java we're currently using. 
+    # If it's not then please Update.
     # Then run `make java`.
     make java
     # If there are any errors during the javadoc generation, fix
@@ -73,7 +73,7 @@ Javadoc
 
 Python
 ======
-    # Note: in last version of epydoc (epydoc-3.0.1-15) is missing fix introduced in upstream r1728,
+    # Note: The last version of epydoc (epydoc-3.0.1-15) is missing fix introduced in upstream r1728,
     # if it's not applied next step will probably end up with exception where epydoc run
     # fails to run to completion.  Mine stopped around 66% completion.
     # NOTE: I ended up running an old version found on rpmfind - 3.0.1-14 and then I applied the
